@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 18px;
+    
+
+}
+.attribution {
+    margin-top: 200px;
+}
+body {
+    
+    font-family: 'Oswald', sans-serif;
+}
+p {
+    line-height: 25px;
+}
+
+
+.container {
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    margin: 20px auto;
+    grid-row-gap: 20px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.logo {
+    height: 80%;
+    align-self: center;
+}
+#open-menu-icon {
+    height: 50%;
+    align-self: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+}
+
+.main-photo {
+    background: url(/assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+main p {
+    color: rgb(126, 126, 126);
+}
+main button {
+    width: 50%;
+    height: fit-content;
+    background-color: rgb(240, 107, 74);
+    padding: 12px 15px;
+    border: none;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.first-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    gap: 40px;
+    padding: 30px;
+}
+.first-section h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2.3rem;
+}
+.first-section p {
+    color: lightgrey;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+    gap: 10px;
+
+}
+.wrapper h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.wrapper p {
+    font-size: .8rem;
+}
+
+.second-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.second-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+
+}
+
+.second-wrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    height: 147px;
+}
+.second-wrapper img {
+    flex-basis: 10%;
+    height: 147px;
+}
+
+.second-wrapper h1 {
+    font-size: 1.8rem;
+    color: grey;
+}
+.second-wrapper h2 {
+    font-size: 1.2rem;
+    color: black;
+}
+.second-wrapper p {
+    color: grey;
+    font-size: .9rem;
+}
+
+nav ul {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .container {
+        height: fit-content;
+        width: 1440px;
+        margin:0px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px auto 200px;
+        gap: 15px;
+        
+    }
+
+    nav {
+        grid-column: 1/-1;
+        align-items: center;
+        
+    }
+    nav li{
+        list-style-type: none;
+        padding-inline: 15px;
+    }
+    .logo {
+        height: 40px;
+    }
+    main {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        margin-bottom: 0;
+        
+    }
+    main div {
+        grid-column: 1/-1;
+        
+    }
+    .main-photo {
+        background: url(/assets/images/image-web-3-desktop.jpg);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    main h1 {
+        grid-row: 2/-1;
+        font-size: 3rem;
+        width: 80%;
+    }
+    main p {
+        line-height:30px;
+        letter-spacing: 1px;
+    }
+
+    .first-section {
+        min-height: 600px;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .second-section {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    #open-menu-icon {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .second-wrapper  {
+        
+        justify-content: flex-start;
+        margin-right: 10px;
+        height: 100%;
+        
+    }
+    .second-wrapper p {
+        width: 70%;
+    }
+    .second-wrapper img {
+        height: 110%;
+    }
+    
+    
+
+    
+}
